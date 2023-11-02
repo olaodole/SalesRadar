@@ -1,0 +1,36 @@
+style.css
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+#map {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    border: 2px solid #ccc;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+

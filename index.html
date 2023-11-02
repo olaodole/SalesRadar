@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Yard Sale Locator</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <h1>Yard Sale Locator</h1>
+    </header>
+    <main>
+        <!-- Search Form -->
+        <form id="searchForm">
+            <input type="text" id="searchLocation" placeholder="Enter location">
+            <input type="date" id="searchDate">
+            <select id="searchCategory">
+                <option value="clothing">Clothing</option>
+                <option value="electronics">Electronics</option>
+                <option value="toys">Toys</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <button id="searchButton" type="submit">Search</button>
+        </form>
+        
+        <div id="map"></div> <!-- Map -->
+
+        <!-- Review Form -->
+        <form id="reviewForm">
+            <textarea id="reviewText" placeholder="Leave a review"></textarea>
+            <input type="number" id="reviewRating" min="1" max="5" placeholder="Rating (1-5)">
+            <button type="submit">Submit Review</button>
+        </form>
+    </main>
+    <footer>
+        <!-- Notifications and User Authentication Components Go Here -->
+    </footer>
+    
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
